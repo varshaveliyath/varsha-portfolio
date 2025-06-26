@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Varsha Veliyath</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .about-hero {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #f2f2f2, #cbdcff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 120px 20px 60px;
+      }
+
+      .about-box {
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 800px;
+        width: 100%;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        text-align: center;
+      }
+
+      .about-box h2 {
+        font-size: 2.5rem;
+        color: #1e1e2f;
+        margin-bottom: 20px;
+      }
+
+      .about-box p {
+        font-size: 1rem;
+        color: #333;
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+
+      .resume-button {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 12px 24px;
+        font-weight: 600;
+        font-size: 1rem;
+        background-color: #1e1e2f;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        transition: background 0.3s ease, transform 0.2s ease;
+      }
+
+      .resume-button:hover {
+        background-color: #000;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ====================== NAVBAR ====================== -->
+    <nav class="navbar">
+      <h1 class="logo">V^3</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ====================== ABOUT CONTENT ====================== -->
+    <section class="about-hero">
+      <div class="about-box">
+        <h2>Hi, I’m Varsha</h2>
+        <p>
+          My journey into design didn’t start with a grand plan. It began with a
+          curiosity for shapes, alignment, typefaces and how they make people
+          feel. Over time, I realized design is more than just visual beauty;
+          it’s about building experiences that speak without words.
+        </p>
+        <p>
+          Today, I work towards bulding intefaces that would make the user fall
+          in love with the service. Whether I’m crafting a magazine layout or
+          prototyping a full-stack application, I’m always chasing that sweet
+          spot where creativity meets clarity.
+        </p>
+
+        <a
+          href="./assets/VarshaVeliyath_Resume.pdf"
+          download
+          class="resume-button"
+          >Download My Resume</a
+        >
+      </div>
+    </section>
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer>
+      <p>© 2025 Varsha Veliyath · All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

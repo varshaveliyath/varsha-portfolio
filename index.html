@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Varsha Veliyath | Portfolio</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ====================== HEADER SECTION ====================== -->
+    <header class="hero">
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <h1 class="logo">V^3</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <!-- Particle Background -->
+        <div id="particles-js"></div>
+
+        <!-- Intro Text -->
+        <div class="text-box">
+          <h2 class="hero-title"><span id="typed-text"></span></h2>
+          <p class="hero-subtitle">UI/UX · Magazine · Branding</p>
+          <a href="projects.html" class="hero-button">Explore My Work</a>
+        </div>
+
+        <!-- Hero Image and Info Card -->
+        <div class="hero-image-container">
+          <img
+            src="./assets/varsha.jpg"
+            alt="Varsha Veliyath"
+            class="hero-image"
+          />
+          <div class="info-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Hi, I'm Varsha!</h3>
+                <p>Aspiring Graphic Designer</p>
+              </div>
+              <div class="card-back">
+                <p>
+                  Passionate about creating bold visuals and impactful user
+                  experiences. Let’s collaborate!
+                </p>
+                <a href="about.html" class="about-button">More About Me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====================== PROJECTS SECTION ====================== -->
+    <section class="projects">
+      <h2 class="section-title">Top Projects</h2>
+      <div class="project-gallery">
+        <!-- Project Card 1 - BitsNBytes Magazine -->
+        <div class="project-wrapper">
+          <div class="project-card flip-card" onclick="openPreview(0)">
+            <div class="flip-inner">
+              <div
+                class="flip-front"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 10px;
+                "
+              >
+                <img
+                  src="./assets/bitsnbytes/page1.jpg"
+                  alt="BitsNBytes Cover"
+                  style="
+                    width: 100%;
+                    max-width: 200px;
+                    border-radius: 1px;
+                    box-shadow: 0 4px 12px rgba(194, 168, 168, 0.1);
+                  "
+                />
+                <h3
+                  style="color: #1e1e2f; font-size: 1.1rem; text-align: center"
+                >
+                  BitsNBytes- A Digital Magazine
+                </h3>
+              </div>
+              <div class="flip-back">
+                <p>
+                  Second edition of our college magazine — designed, co-founded,
+                  and edited by me.<br /><br />
+                  <strong>Preview</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 - AeroSat Launch Program -->
+        <div class="project-wrapper">
+          <div class="project-card flip-card" onclick="openPreview(1)">
+            <div class="flip-inner">
+              <div
+                class="flip-front"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 10px;
+                "
+              >
+                <img
+                  src="./assets/bitsnbytes/image.png"
+                  alt="AeroSat Launch"
+                  style="
+                    width: 100%;
+                    max-width: 280px;
+                    border-radius: 2px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                  "
+                />
+                <h3
+                  style="color: #1e1e2f; font-size: 1.1rem; text-align: center"
+                >
+                  AeroSat Launch Program
+                </h3>
+              </div>
+              <div class="flip-back">
+                <p>
+                  A student-led satellite launch initiative. I contributed to
+                  mission design visuals and launch branding.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 - Fashion UI Website -->
+        <div class="project-wrapper">
+          <div class="project-card flip-card" onclick="openPreview(2)">
+            <div class="flip-inner">
+              <div
+                class="flip-front"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 10px;
+                "
+              >
+                <img
+                  src="./assets/bitsnbytes/website.jpg"
+                  style="
+                    width: 100%;
+                    max-width: 180px;
+                    border-radius: 2px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                  "
+                />
+                <h3
+                  style="color: #1e1e2f; font-size: 1.1rem; text-align: center"
+                >
+                  A Fashion UI
+                </h3>
+              </div>
+              <div class="flip-back">
+                <p>
+                  A fiction fashion brand I designed in Figma. Sleek and
+                  professional.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====================== FULLSCREEN PREVIEWS ====================== -->
+
+      <!-- Preview 1 - BitsNBytes Magazine -->
+      <div class="fullscreen-preview" id="preview-0">
+        <div class="preview-overlay" onclick="closePreview()"></div>
+        <div class="preview-box glass">
+          <button class="close-btn" onclick="closePreview()">×</button>
+          <h2>BitsNBytes Magazine – 2nd Edition</h2>
+          <p class="preview-description">
+            Designed and edited by me • 27 pages
+          </p>
+
+          <!-- Image Carousel -->
+          <div class="carousel-container">
+            <button class="carousel-btn" onclick="prevSlide()">‹</button>
+            <div class="carousel-slide-wrapper">
+              <div class="carousel-slide" id="carousel-slide">
+                <!-- Images added dynamically via JS -->
+              </div>
+            </div>
+            <button class="carousel-btn" onclick="nextSlide()">›</button>
+          </div>
+
+          <a
+            href="projects.html#bitsnbytes"
+            class="carousel-link-btn"
+            target="_blank"
+            >See Full Edition →</a
+          >
+        </div>
+      </div>
+
+      <!-- Preview 2 - AeroSat -->
+      <div class="fullscreen-preview" id="preview-1">
+        <div class="preview-overlay" onclick="closePreview()"></div>
+        <div class="preview-box glass">
+          <button class="close-btn" onclick="closePreview()">×</button>
+          <h2>AeroSat Launch Program</h2>
+          <p class="preview-description">
+            A collaborative space-tech initiative. I contributed to branding and
+            mission design.
+          </p>
+          <div class="preview-images">
+            <img
+              src="./assets/bitsnbytes/image.png"
+              alt="AeroSat Launch Visual"
+            />
+          </div>
+          <a
+            href="projects.html#aerosat"
+            class="carousel-link-btn"
+            target="_blank"
+            >See Full Project →</a
+          >
+        </div>
+      </div>
+
+      <!-- Preview 3 - Belle Fashion UI -->
+      <div class="fullscreen-preview" id="preview-2">
+        <div class="preview-overlay" onclick="closePreview()"></div>
+        <div class="preview-box glass">
+          <button class="close-btn" onclick="closePreview()">×</button>
+          <h2>Belle Fashion Website</h2>
+          <p class="preview-description">
+            A modern, stylish fashion brand website I designed from scratch
+            using Figma.
+          </p>
+          <div class="preview-images">
+            <img
+              src="./assets/bitsnbytes/website.jpg"
+              alt="Belle Fashion Website Design"
+            />
+          </div>
+          <a
+            href="projects.html#belle"
+            class="carousel-link-btn"
+            target="_blank"
+            >See Full Project →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer>
+      <p>© 2025 Varsha Veliyath · All Rights Reserved</p>
+    </footer>
+
+    <!-- ====================== SCRIPTS ====================== -->
+    <!-- Particle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script>
+      // Carousel for BitsNBytes
+      const imagePaths = Array.from(
+        { length: 10 },
+        (_, i) => `./assets/bitsnbytes/page${i + 1}.jpg`
+      );
+      let currentSlide = 0;
+
+      function renderCarousel() {
+        const slideContainer = document.getElementById("carousel-slide");
+        slideContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+        slideContainer.innerHTML = imagePaths
+          .map((path) => `<img src="${path}" alt="BitsNBytes Page" />`)
+          .join("");
+      }
+
+      function nextSlide() {
+        if (currentSlide < imagePaths.length - 1) {
+          currentSlide++;
+          renderCarousel();
+        }
+      }
+
+      function prevSlide() {
+        if (currentSlide > 0) {
+          currentSlide--;
+          renderCarousel();
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", renderCarousel);
+
+      // Typewriter
+      const text = "Designing Emotions, One Pixel at a Time...";
+      const speed = 3000 / text.length;
+      let i = 0;
+      const typedText = document.getElementById("typed-text");
+
+      function typeWriter() {
+        if (i < text.length) {
+          typedText.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+
+      window.onload = typeWriter;
+
+      // Preview Modals
+      function openPreview(id) {
+        document.getElementById(`preview-${id}`).style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+
+      function closePreview() {
+        document
+          .querySelectorAll(".fullscreen-preview")
+          .forEach((p) => (p.style.display = "none"));
+        document.body.style.overflow = "auto";
+      }
+
+      // ParticleJS Configuration
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 100, density: { enable: true, value_area: 500 } },
+          color: {
+            value: ["#ffffff", "#aabbee", "#d3d3d3", "#4a4a4a", "#3b5998"],
+          },
+          shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
+          opacity: { value: 0.7, random: true },
+          size: { value: 8, random: true },
+          line_linked: { enable: false },
+          move: {
+            enable: true,
+            speed: 1.2,
+            direction: "none",
+            random: true,
+            straight: false,
+            out_mode: "out",
+          },
+        },
+        interactivity: {
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: false },
+          },
+          modes: { repulse: { distance: 80, duration: 0.4 } },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
+</html>

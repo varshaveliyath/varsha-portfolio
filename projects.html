@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Varsha Veliyath</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">V^3</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- ====================== HERO SECTION FOR PROJECTS ====================== -->
+    <section class="projects-hero">
+      <div class="shape-container">
+        <div class="cube"></div>
+        <div class="sphere"></div>
+        <div class="triangle"></div>
+      </div>
+
+      <div class="hero-text">
+        <h1>Explore My Design Worlds</h1>
+        <p>From websites to magazines, dive into everything creative!</p>
+        <div class="scroll-indicator">
+          <span></span>
+          <p>Scroll Down</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2 class="section-title">All Projects</h2>
+
+      <!-- WEBSITE DESIGN SECTION -->
+      <div class="project-category">
+        <h3>Website Design</h3>
+        <div class="project-gallery">
+          <div class="project-wrapper">
+            <div class="project-card flip-card" onclick="openPreview('web-1')">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <img src="./assets/website1.jpg" alt="Website Project" />
+                  <h3>Fashion UI Website</h3>
+                </div>
+                <div class="flip-back">
+                  <p>Modern fashion E-commerce site designed in Figma.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Preview -->
+        <div class="fullscreen-preview" id="preview-web-1">
+          <div class="preview-overlay" onclick="closePreview()"></div>
+          <div class="preview-box glass">
+            <button class="close-btn" onclick="closePreview()">×</button>
+            <h2>Fashion UI Website</h2>
+            <p class="preview-description">
+              Theme: Modern | Tools: Figma | Purpose: Trendy clothing brand
+              site. Classic and Professional.
+            </p>
+            <div class="preview-images">
+              <img src="./assets/website1.jpg" alt="Fashion UI" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT DESIGN SECTION -->
+<div class="project-category">
+  <h3>Product Design</h3>
+  <div class="project-gallery">
+    <!-- Calendar Design Card -->
+    <div class="project-wrapper">
+      <div class="project-card flip-card" onclick="openPreview('product-1')">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="./assets/calendar.jpg" alt="Calendar UI" />
+            <h3>Educational Calendar UI</h3>
+          </div>
+          <div class="flip-back">
+            <p>Interactive academic calendar design for a student portal of an Ed-tech Client.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky Notes Card -->
+    <div class="project-wrapper">
+      <div class="project-card flip-card" onclick="openPreview('product-2')">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="./assets/sticky.jpg" alt="Sticky Notes App" />
+            <h3>Sticky Notes App UI</h3>
+          </div>
+          <div class="flip-back">
+            <p>Note-taking tool built for an EdTech client.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Calendar Preview -->
+  <div class="fullscreen-preview" id="preview-product-1">
+    <div class="preview-overlay" onclick="closePreview()"></div>
+    <div class="preview-box glass">
+      <button class="close-btn" onclick="closePreview()">×</button>
+      <h2>Academic Calendar UI</h2>
+      <p class="preview-description">
+        Theme: Functional Design | Tools: Figma | Use: Academic Timetable UI
+      </p>
+      <div class="preview-images">
+        <img src="./assets/calendar.jpg" alt="Calendar UI Design" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Notes Preview -->
+  <div class="fullscreen-preview" id="preview-product-2">
+    <div class="preview-overlay" onclick="closePreview()"></div>
+    <div class="preview-box glass">
+      <button class="close-btn" onclick="closePreview()">×</button>
+      <h2>Sticky Notes UI</h2>
+      <p class="preview-description">
+        Theme: Productivity | Tools: Figma | Client: Educational Platform
+      </p>
+      <div class="preview-images">
+        <img src="./assets/sticky.jpg" alt="Sticky Notes UI" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- MAGAZINE SECTION -->
+<div class="project-category">
+  <h3>Magazine</h3>
+  <div class="project-gallery">
+    <!-- Edition 1 Card -->
+    <div class="project-wrapper">
+      <div class="project-card flip-card" onclick="openPreview('magazine-1')">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="./assets/BitsN'Bytes/1.jpg" alt="BitsNBytes 1" />
+            <h3>BitsNBytes – Edition 1</h3>
+          </div>
+          <div class="flip-back">
+            <p>Edition 1 of our college magazine. For students to stay updated on the news and tech in college.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edition 2 Card -->
+    <div class="project-wrapper">
+      <div class="project-card flip-card" onclick="openPreview('magazine-2')">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="./assets/BitsN'Bytes2/1.jpg" alt="BitsNBytes 2" />
+            <h3>BitsNBytes – Edition 2</h3>
+          </div>
+          <div class="flip-back">
+            <p>Second edition with refined layout. With over a 1000 readers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Preview for Edition 1 -->
+  <div class="fullscreen-preview" id="preview-magazine-1">
+    <div class="preview-overlay" onclick="closePreview()"></div>
+    <div class="preview-box glass">
+      <button class="close-btn" onclick="closePreview()">×</button>
+      <h2>BitsNBytes – Edition 1</h2>
+      <p class="preview-description">
+        Theme: Student Voice | Tools: Figma | 27 Pages
+      </p>
+      <div class="preview-images" id="magazine-1-pages"></div>
+    </div>
+  </div>
+
+  <!-- Preview for Edition 2 -->
+  <div class="fullscreen-preview" id="preview-magazine-2">
+    <div class="preview-overlay" onclick="closePreview()"></div>
+    <div class="preview-box glass">
+      <button class="close-btn" onclick="closePreview()">×</button>
+      <h2>BitsNBytes – Edition 2</h2>
+      <p class="preview-description">
+        Theme: Evolving Creativity | Tools: Fifma, Canva | 20 Pages
+      </p>
+      <div class="preview-images" id="magazine-2-pages"></div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- POSTERS SECTION -->
+      <div class="project-category">
+        <h3>Posters</h3>
+        <div class="project-gallery">
+          <div class="project-wrapper">
+            <div
+              class="project-card flip-card"
+              onclick="openPreview('poster-1')"
+            >
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <img src="./assets/poster1.jpg" alt="Poster Design" />
+                  <h3>Khaleafa Drinks- Mojito Stall</h3>
+                </div>
+                <div class="flip-back">
+                  <p>
+                    Designed a banner for the client for their food stall at a
+                    college fest.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fullscreen-preview" id="preview-poster-1">
+          <div class="preview-overlay" onclick="closePreview()"></div>
+          <div class="preview-box glass">
+            <button class="close-btn" onclick="closePreview()">×</button>
+            <h2>SpaceTech Week Poster</h2>
+            <p class="preview-description">
+              Theme: Playful and Friendly | Tools: Canva | Description: Carnival
+              themed for food stall.
+            </p>
+            <div class="preview-images">
+              <img src="./assets/Untitled.jpg" alt="Poster" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    <footer>
+      <p>© 2025 Varsha Veliyath · All Rights Reserved</p>
+    </footer>
+
+    <script>
+      function openPreview(id) {
+        document.getElementById(`preview-${id}`).style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+
+      function closePreview() {
+        document.querySelectorAll(".fullscreen-preview").forEach((el) => {
+          el.style.display = "none";
+        });
+        document.body.style.overflow = "auto";
+      }
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const scrollY = window.scrollY;
+
+        const heroSection = document.querySelector(".projects-hero");
+        const cube = document.querySelector(".cube");
+        const sphere = document.querySelector(".sphere");
+        const triangle = document.querySelector(".triangle");
+
+        // Parallax background slow move
+        heroSection.style.transform = `translateY(${scrollY * 0.3}px)`;
+
+        // Layered shapes move at different speeds
+        cube.style.transform = `translateY(${
+          scrollY * 0.5
+        }px) rotate(${scrollY}deg)`;
+        sphere.style.transform = `translateY(${scrollY * 0.2}px) scale(1.1)`;
+        triangle.style.transform = `translateY(${scrollY * 0.6}px) rotate(${
+          scrollY / 2
+        }deg)`;
+      });
+    </script>
+    <script>
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        const heroBg = document.querySelector(".projects-hero::before");
+
+        // Optional — parallax effect on shapes
+        document.querySelector(".cube").style.transform = `translateY(${
+          scrollY * 0.3
+        }px) rotate(${scrollY}deg)`;
+        document.querySelector(".sphere").style.transform = `translateY(${
+          scrollY * 0.2
+        }px)`;
+        document.querySelector(".triangle").style.transform = `translateY(${
+          scrollY * 0.4
+        }px)`;
+
+        // Parallax on the pseudo-background (clean + light)
+        document.querySelector(
+          ".projects-hero"
+        ).style.transform = `translateY(${scrollY * 0.1}px)`;
+      });
+    </script>
+    <script>
+  function openPreview(id) {
+    document.getElementById(`preview-${id}`).style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
+
+  function closePreview() {
+    document.querySelectorAll(".fullscreen-preview").forEach((p) => {
+      p.style.display = "none";
+    });
+    document.body.style.overflow = "auto";
+  }
+
+  // Load 27 pages dynamically for Edition 1
+  const edition1Container = document.getElementById("magazine-1-pages");
+  for (let i = 1; i <= 20; i++) {
+    const img = document.createElement("img");
+    img.src = `./assets/BitsN'Bytes/${i}.jpg`;
+    img.alt = `Page ${i}`;
+    edition1Container.appendChild(img);
+  }
+
+  // Load 20 pages dynamically for Edition 2
+  const edition2Container = document.getElementById("magazine-2-pages");
+  for (let i = 1; i <= 27; i++) {
+    const img = document.createElement("img");
+    img.src = `./assets/BitsN'Bytes2/${i}.jpg`;
+    img.alt = `Page ${i}`;
+    edition2Container.appendChild(img);
+  }
+</script>
+
+  </body>
+</html>
